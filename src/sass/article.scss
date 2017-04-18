@@ -1,0 +1,23 @@
+@import "tools";
+
+.article {
+  &__title {
+    color: $secondary-accent;
+    margin-bottom: 1rem;
+  }
+  &__text {
+    color: $primary-dark;
+    margin-bottom: 1rem;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    color: $primary-light;
+    background-color: $primary-accent;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+}

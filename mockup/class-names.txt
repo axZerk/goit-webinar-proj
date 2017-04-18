@@ -1,0 +1,52 @@
+.wrapper .wrapper--img
+  .page-header .container
+    .navbar
+      .logo { Theory }
+      .menu
+        .menu__item
+        .menu__link
+
+    .page-header__promo .promo
+      .promo__title { Welcome to Theory }
+      .promo__text { A fully responsive HTML 5 website draft }
+
+.wrapper
+  .info .container
+    .info__item*3
+      .article
+        .article__title { Magna tempus sed amet aliquam veroeros, Interdum lorem pulvinar adipiscing vitae, Libero purus magna sapien sed ullamcorper }
+        .article__text { Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu. }
+        .article__link { more }
+
+.wrapper .wrapper--blue
+  .section .container
+    .section__header
+      .section__title { Ipsum Feugiat }
+      .section__text { Semper suscipit posuere apede }
+    .section__body
+      .section__item*4
+        .user-card
+          .user-card__img
+          .user-card__title { Magna, Ipsum, Tempus, Dolore }
+          .user-card__text { Cipdum dolor, Vestibulum comm, Fusce pellentes, Praesent placer }
+
+.wrapper
+  .section .container
+    .section__header
+      .section__title { Nunc Dignissim }
+      .section__text { Aliquam erat volutpat nam dui }
+    .section__body
+      .section__item*2
+        .article
+          .article__img
+          .article__title { Praesent placerat magna, Fusce pellentesque tempus }
+          .article__text { Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor lorem ipsum., Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna non comodo sodales tempus. }
+          .article__link { more }
+
+.wrapper .wrapper--dark
+  .page-footer .container
+    .legal
+      .legal__text { © Untitled. Design: TEMPLATED. Images: Unsplash. }
+    .social
+      .social__item*5
+        .social__icon
