@@ -2,9 +2,13 @@
 
 .page-header {
   padding-top: 3rem;
-  //display: flex;
-  //flex-direction: column;
-  //height: 450px;
+  &__promo {
+    margin: auto;
+    padding: 5rem 0;
+    @media #{$tablet} {
+      padding: 10rem 0;
+    }
+  }
 }
 
 .navbar {
@@ -17,47 +21,46 @@
 
 .logo {
   display: block;
-  text-align: center;
   color: $primary-light;
   font-size: 1.3rem;
   font-weight: bold;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .menu {
   display: flex;
-
   @media (max-width: 767px) {
     flex-flow: row wrap;
     margin-top: 2rem;
   }
-
   @media #{$tablet} {
     flex-basis: 50%;
     flex-grow: 0;
     justify-content: space-between;
   }
-
   &__item {
-    width: 33%;
-    flex: auto;
+    flex-basis: 33%;
+    flex-grow: 0;
   }
-
   &__link {
     display: block;
     color: $primary-light;
     text-align: center;
     text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
 .promo {
   text-align: center;
-  margin: auto;
   color: $primary-light;
-  padding: 5rem 0;
-
-  @media #{$tablet} {
-    padding: 10rem 0;
+  &__title {
+    @include font-settings(large);
+    @media #{$tablet} {
+      @include font-settings(xs-large);
+    }
   }
 }

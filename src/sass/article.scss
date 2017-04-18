@@ -1,9 +1,17 @@
 @import "tools";
 
 .article {
-  &__title {
-    color: $secondary-accent;
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
     margin-bottom: 1rem;
+  }
+  &__title {
+    margin-bottom: 1rem;
+    max-height: $base-line-height * 3;
+    overflow: hidden;
+    color: $secondary-accent;
   }
   &__text {
     color: $primary-dark;
@@ -13,11 +21,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
+    padding: 0.5rem;
     color: $primary-light;
     background-color: $primary-accent;
     text-transform: capitalize;
     font-weight: bold;
-    padding: 0.5rem;
+    @media #{$mobile} {
+      width: 25%;
+    }
+    &:hover {
+      background-color: $secondary-accent;
+    }
   }
 }

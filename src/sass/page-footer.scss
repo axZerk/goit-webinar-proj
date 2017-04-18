@@ -1,12 +1,10 @@
 @import "tools";
 
 .page-footer {
-  background-color: $primary-dark;
-  padding: 2rem 0;
-
+  padding: 2rem;
   @media #{$tablet} {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 }
@@ -15,7 +13,6 @@
   color: $primary-light;
   text-align: center;
   text-transform: uppercase;
-
   @media (max-width: 767px) {
     margin-bottom: 1rem;
   }
@@ -30,8 +27,15 @@
       margin-right: 0;
     }
   }
+  &__link {
+    display: block;
+  }
   &__icon {
     height: 2rem;
     width: 2rem;
+    @media #{$tablet} {
+      height: 3rem;
+      width: 3rem;
+    }
   }
 }
