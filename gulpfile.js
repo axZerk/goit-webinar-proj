@@ -63,12 +63,12 @@ gulp.task('bundleCss', function () {
       outputStyle: 'expanded',
       includePaths: [paths.src.cssGlobalImport, 'node_modules/susy/sass']
     }).on('error', sass.logError))
-    .pipe(concat('style.min.css'))
+    .pipe(concat('style.css'))
     .pipe(autoprefixer({
       browsers: ['last 5 versions', 'IE 9'],
       cascade: true
     }))
-    .pipe(cssnano())
+    // .pipe(cssnano())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.build.css))
     .pipe(browserSync.reload({stream: true}));
